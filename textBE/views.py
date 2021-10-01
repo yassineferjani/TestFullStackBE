@@ -9,20 +9,6 @@ from rest_framework.response import Response
 
 from .serializers import jsondocSerializer
 from .models import jsondoc
-import os
-# @csrf_exempt
-# @api_view(['POST'])
-# def post(request):
-#     if request.methode=='POST':
-#         serializer = jsondocSerializer(data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             # dossier = "C:/"
-#             # file = open(f"{dossier}Jsonfile.txt", "w")
-#             # file.write(f'{request}')
-#             # file.close()
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
 def snippet_list(request):
